@@ -6,7 +6,11 @@ export default class Todo extends React.Component {
   }
   render() {
     return (
-      <li onClick={this.handleClick}>{this.props.todo.name} { this.props.todo.completed ? ' ✔️' : ''}</li>
+      <li 
+        onClick={this.handleClick}
+      >
+        {this.props.todo.name}{this.props.todo.completed ? ' ✔️' : ''}
+      </li>
     )
   }
 }
